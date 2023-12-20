@@ -38,3 +38,4 @@ https://github.com/Birch-san/k-diffusion/archive/refs/heads/mps.zip#egg=k-diffus
 https://github.com/invoke-ai/PyPatchMatch/archive/refs/tags/0.1.4.zip#egg=pypatchmatch
 https://github.com/openai/CLIP/archive/eaa22acb90a5876642d0507623e859909230a52d.zip#egg=clip
 https://github.com/invoke-ai/clipseg/archive/relaxed-python-requirement.zip#egg=clipseg
+fonttools>=4.43.0 # not directly required, pinned by Snyk to avoid a vulnerability
