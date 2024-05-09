@@ -1,4 +1,4 @@
-FROM python:3.10-slim AS builder
+FROM python:3.13.0b1-slim AS builder
 
 # use bash
 SHELL [ "/bin/bash", "-c" ]
@@ -32,7 +32,7 @@ RUN python3 -m venv .venv \
     --no-cache-dir \
     -r ${PIP_REQUIREMENTS}
 
-FROM python:3.10-slim AS runtime
+FROM python:3.13.0b1-slim AS runtime
 
 # Install necesarry packages
 RUN apt-get update \
